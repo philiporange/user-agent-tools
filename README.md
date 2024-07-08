@@ -7,6 +7,12 @@ This project provides a Python class `UA` for working with user agent strings. I
 - Generate random user agents with optional browser and system filters
 - Interpret user agent strings to extract OS, browser, and platform information
 
+## Installation
+
+```bash
+pip install user-agent-tools
+```
+
 ## Usage
 
 ```python

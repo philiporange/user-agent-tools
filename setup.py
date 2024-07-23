@@ -1,5 +1,4 @@
-from setuptools import setup, find_packages
-
+from setuptools import setup
 from __init__ import __version__, __program__
 
 
@@ -15,8 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/philiporange/user-agent-tools",
-    packages=find_packages(where="."),
-    package_dir={"": "."},
+    py_modules=["__init__", "user_agent_tools"],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",

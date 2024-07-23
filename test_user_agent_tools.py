@@ -1,5 +1,5 @@
 import unittest
-from tools import UA
+from user_agent_tools import UA
 
 
 class TestUA(unittest.TestCase):

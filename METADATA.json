@@ -1,62 +1,55 @@
 {
   "name": "user-agent-tools",
-  "short_description": "Python library for generating random user agents and interpreting user agent strings.",
-  "long_description": "User Agent Tools is a Python utility library that provides functionality for working with user agent strings. It allows developers to generate random, realistic user agent strings with optional filtering by browser and operating system, retrieve the most commonly used user agents, and parse user agent strings to extract detailed information about the client's browser, operating system, and platform. The library includes a dataset of user agents ranked by prevalence from real web traffic, making it useful for web scraping, API testing, automation, and understanding client browser environments.",
+  "short_description": "Python library for generating and interpreting user agent strings from real-world browser data.",
+  "long_description": "User Agent Tools is a lightweight Python utility that provides functionality for working with user agent strings. It enables developers to generate random user agents from a curated dataset of real-world user agents ranked by prevalence, filter them by browser type and operating system, and parse user agent strings to extract detailed information about operating systems, browsers, browser versions, and device platforms. The library includes comprehensive support for multiple OS platforms (Windows, macOS, Linux, Android, iOS, Kindle) and browsers (Chrome, Firefox, Safari, Opera, Edge, Internet Explorer), making it useful for web scraping, testing, security applications, and browser compatibility simulation.",
   "keywords": [
     "user-agent",
     "browser-detection",
     "web-scraping",
-    "http-client",
+    "http-headers",
     "user-agent-generator",
     "user-agent-parser",
     "browser-fingerprinting",
-    "os-detection",
-    "testing-tools",
-    "api-client"
+    "cross-platform",
+    "testing",
+    "python",
+    "cli-tool",
+    "http-client"
   ],
   "primary_language": "Python",
   "languages": [
-    "Python"
+    "Python",
+    "Shell"
   ],
   "frameworks": [],
   "modules": [
     {
       "path": "user_agent_tools.py",
-      "description": "Core module implementing the UA class for generating and interpreting user agent strings with pattern matching for browsers and operating systems."
+      "description": "Core module providing the UA class for generating random user agents, interpreting user agent strings, and managing user agent datasets with filtering and probability-based selection."
     },
     {
       "path": "__init__.py",
-      "description": "Package initialization exposing the UA class and defining package version (0.1.1) and metadata."
-    },
-    {
-      "path": "data.json",
-      "description": "Dataset containing ranked list of user agent strings with their occurrence probabilities from real web traffic."
+      "description": "Package initialization that exports the UA class and defines version and program metadata."
     },
     {
       "path": "test_user_agent_tools.py",
-      "description": "Unit tests covering user agent generation with filters, interpretation of different browser/OS combinations, and edge cases."
+      "description": "Comprehensive unit tests covering user agent generation with filters, interpretation of various browser and OS combinations, and edge case validation."
     },
     {
       "path": "setup.py",
-      "description": "Package configuration and distribution metadata for PyPI publication."
+      "description": "Package configuration and distribution metadata for PyPI deployment and dependency specification."
     },
     {
       "path": "build.sh",
-      "description": "Build script for code formatting, linting, testing, and cleanup using black and flake8."
+      "description": "Build automation script that formats code with black, runs flake8 linting, executes tests, and updates .gitignore."
+    },
+    {
+      "path": "data.json",
+      "description": "Dataset of real-world user agent strings with associated probability rankings sourced from willshouse.com."
+    },
+    {
+      "path": "README.md",
+      "description": "User-facing documentation with installation instructions, feature overview, and usage examples."
     }
-  ],
-  "git": {
-    "is_repo": true,
-    "remote_url": "https://github.com/philiporange/user-agent-tools.git",
-    "github_name": "philiporange/user-agent-tools",
-    "default_branch": "main",
-    "last_commit": "2024-07-23T01:08:40+01:00"
-  },
-  "stats": {
-    "files": 9,
-    "lines_of_code": 312,
-    "size_bytes": 30601
-  },
-  "generated_at": "2025-12-06T23:27:54.213441",
-  "generator_version": "1.0.0"
+  ]
 }
